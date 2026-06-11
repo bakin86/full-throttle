@@ -33,7 +33,7 @@ const yapari = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Davaajargal Lodonjamts — Full Stack Developer",
+  title: "FULL THROTTLE — Davaajargal Lodonjamts",
   description:
     "Building digital experiences that people remember. Full stack developer portfolio.",
 };
