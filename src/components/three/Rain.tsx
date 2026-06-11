@@ -87,7 +87,8 @@ const LIGHT_X = [-(hw + 4), (hw + 4)];
 
 export function StreetlightRain() {
   const groupRef = useRef<THREE.Group>(null);
-  const refs = useRef<THREE.Points[]>([]);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const refs = useRef<any[]>([]);
 
   // One rain cluster per light (2 lights × 2 segments with lights = 4 clusters)
   const clusters = useMemo(() => {
