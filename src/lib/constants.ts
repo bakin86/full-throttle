@@ -31,9 +31,9 @@ export const CHAPTERS: Chapter[] = [
     start: 0.4,
     end: 0.6,
     camera: {
-      // Other side of track
-      position: [-6, 1.0, 2],
-      lookAt: [0, 0.8, 0],
+      // Other side of track, pulled back
+      position: [-12, 2.5, 8],
+      lookAt: [0, 0.5, -3],
     },
   },
   {
