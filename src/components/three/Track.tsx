@@ -112,7 +112,7 @@ export function Track() {
   const runoffMat = useMemo(
     () =>
       new THREE.MeshStandardMaterial({
-        color: new THREE.Color("#1a2a1a"),
+        color: new THREE.Color("#050505"),
         roughness: 1.0,
         metalness: 0.0,
       }),

@@ -16,7 +16,7 @@ const CRTShader = {
     scanlineIntensity: { value: 0.08 },
     scanlineCount: { value: 400.0 },
     rgbShift: { value: 0.0015 },
-    barrelDistortion: { value: 0.04 },
+    barrelDistortion: { value: 0.25 },
     vignetteStrength: { value: 0.4 },
     noiseIntensity: { value: 0.03 },
     flickerIntensity: { value: 0.01 },

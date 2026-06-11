@@ -73,21 +73,16 @@ export function Skills() {
           Skills
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+        <div className="flex flex-wrap gap-2 sm:grid sm:grid-cols-2 sm:gap-3">
           {skills.map((skill, i) => (
             <div
               key={skill.name}
               ref={(el) => { if (el) cardsRef.current[i] = el; }}
-              className="hud-glow border border-white/10 bg-white/[0.03] backdrop-blur-sm px-5 py-4 group hover:border-[#DC2626]/30 transition-colors duration-500"
+              className="hud-glow border border-white/10 bg-white/[0.03] backdrop-blur-sm px-4 py-2 sm:px-5 sm:py-4 group hover:border-[#DC2626]/30 transition-colors duration-500"
             >
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-normal tracking-wide text-[#F5F5F5]">
-                  {skill.name}
-                </span>
-                <span className="text-[10px] tracking-[0.2em] uppercase text-[#DC2626]/60">
-                  {skill.category}
-                </span>
-              </div>
+              <span className="text-xs sm:text-sm font-normal tracking-wide text-[#F5F5F5]">
+                {skill.name}
+              </span>
             </div>
           ))}
         </div>

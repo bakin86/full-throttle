@@ -31,9 +31,9 @@ export const CHAPTERS: Chapter[] = [
     start: 0.4,
     end: 0.6,
     camera: {
-      // Other side of track, pulled back
-      position: [-12, 2.5, 8],
-      lookAt: [0, 0.5, -3],
+      // Other side of track, pulled back — wide arc to avoid clipping car
+      position: [-10, 3, 12],
+      lookAt: [0, 0.5, -2],
     },
   },
   {
@@ -60,7 +60,7 @@ export const CHAPTERS: Chapter[] = [
   },
 ];
 
-export const SCROLL_PAGES = 7;
+export const SCROLL_PAGES = 6;
 
 export const COLORS = {
   background: "#050505",

@@ -5,9 +5,10 @@ import { Canvas } from "@react-three/fiber";
 import { Preload, Html } from "@react-three/drei";
 import { Track } from "./Track";
 import { F1Car } from "./F1Car";
-import { Rain } from "./Rain";
+import { Rain, StreetlightRain, WaterSpray } from "./Rain";
 import { CameraRig } from "./CameraRig";
 import { CRTEffect } from "./CRTEffect";
+import { Sparks } from "./Sparks";
 
 function LoadingFallback() {
   return (
@@ -47,6 +48,9 @@ function Scene() {
       </Suspense>
 
       <Rain />
+      <StreetlightRain />
+      <WaterSpray />
+      <Sparks />
 
       {/* CRT post-processing */}
       <CRTEffect />
