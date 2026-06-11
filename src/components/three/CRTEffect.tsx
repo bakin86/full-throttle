@@ -75,10 +75,6 @@ const CRTShader = {
       scanline = pow(scanline, 1.5);
       color *= 1.0 - scanlineIntensity * (1.0 - scanline);
 
-      // Glitch
-      float glitchLine = step(0.998, rand(vec2(time * 0.1, floor(uv.y * 200.0))));
-      color += glitchLine * 0.06;
-
       // Grain
       float noise = rand(uv * resolution + time * 100.0);
       color += (noise - 0.5) * noiseIntensity;
